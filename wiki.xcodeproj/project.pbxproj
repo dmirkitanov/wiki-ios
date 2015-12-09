@@ -18,6 +18,7 @@
 		829A1B881C18A4ED0005DF33 /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829A1B861C18A4ED0005DF33 /* ArticleViewController.xib */; };
 		829A1B8A1C18ADD50005DF33 /* ArticleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A1B891C18ADD50005DF33 /* ArticleListTableViewCell.swift */; };
 		829A1B8C1C18B8650005DF33 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A1B8B1C18B8650005DF33 /* HistoryTableViewCell.swift */; };
+		82A3BB381C18BC0200E3D879 /* wiki.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82A3BB361C18BC0200E3D879 /* wiki.xcdatamodeld */; };
 		B9203F3F6FE01F59C8428DB8 /* Pods_wiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17166C6F0CB7C5D0AF4ADFB2 /* Pods_wiki.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		829A1B861C18A4ED0005DF33 /* ArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
 		829A1B891C18ADD50005DF33 /* ArticleListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewCell.swift; sourceTree = "<group>"; };
 		829A1B8B1C18B8650005DF33 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		82A3BB371C18BC0200E3D879 /* wiki.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wiki.xcdatamodel; sourceTree = "<group>"; };
 		D3451628F66ECD544FFC560C /* Pods-wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-wiki/Pods-wiki.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				829A1B661C176FC60005DF33 /* AppDelegate.swift */,
 				829A1B6F1C176FC60005DF33 /* Assets.xcassets */,
 				829A1B711C176FC60005DF33 /* LaunchScreen.storyboard */,
+				82A3BB361C18BC0200E3D879 /* wiki.xcdatamodeld */,
 				829A1B741C176FC60005DF33 /* Info.plist */,
 			);
 			path = wiki;
@@ -267,6 +270,7 @@
 				829A1B8C1C18B8650005DF33 /* HistoryTableViewCell.swift in Sources */,
 				829A1B8A1C18ADD50005DF33 /* ArticleListTableViewCell.swift in Sources */,
 				829A1B871C18A4ED0005DF33 /* ArticleViewController.swift in Sources */,
+				82A3BB381C18BC0200E3D879 /* wiki.xcdatamodeld in Sources */,
 				829A1B7F1C178C900005DF33 /* ArticleListViewController.swift in Sources */,
 				829A1B7D1C178C5E0005DF33 /* HistoryViewController.swift in Sources */,
 			);
@@ -423,6 +427,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82A3BB361C18BC0200E3D879 /* wiki.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82A3BB371C18BC0200E3D879 /* wiki.xcdatamodel */,
+			);
+			currentVersion = 82A3BB371C18BC0200E3D879 /* wiki.xcdatamodel */;
+			path = wiki.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 829A1B5B1C176FC60005DF33 /* Project object */;
 }
