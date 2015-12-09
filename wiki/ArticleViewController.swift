@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ArticleViewController.swift
 //  wiki
 //
 //  Created by dm on 09/12/15.
@@ -8,18 +8,22 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ArticleViewController: UIViewController {
+
+    @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        webView.loadHTMLString("test", baseURL: nil)
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 
 }
-
