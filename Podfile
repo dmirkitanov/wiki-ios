@@ -6,6 +6,7 @@ target 'wiki' do
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'SVProgressHUD'
+pod 'EasyMapping'
 
 end
 
