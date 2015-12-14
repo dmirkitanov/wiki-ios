@@ -7,6 +7,7 @@ pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'SVProgressHUD'
 pod 'EasyMapping'
+pod 'MagicalRecord'
 
 end
 

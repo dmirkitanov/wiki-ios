@@ -86,12 +86,14 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-wiki/AFNetworking.framework"
   install_framework "Pods-wiki/EasyMapping.framework"
+  install_framework "Pods-wiki/MagicalRecord.framework"
   install_framework "Pods-wiki/SDWebImage.framework"
   install_framework "Pods-wiki/SVProgressHUD.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-wiki/AFNetworking.framework"
   install_framework "Pods-wiki/EasyMapping.framework"
+  install_framework "Pods-wiki/MagicalRecord.framework"
   install_framework "Pods-wiki/SDWebImage.framework"
   install_framework "Pods-wiki/SVProgressHUD.framework"
 fi
