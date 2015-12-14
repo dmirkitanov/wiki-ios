@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		823BE9331C1F52810045B63C /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823BE9321C1F52810045B63C /* Datasource.swift */; };
+		823D45921C1F61EB00385887 /* ArticlesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D45911C1F61EB00385887 /* ArticlesDatasource.swift */; };
+		8290F7D81C1DD93A0040E8D5 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F7D71C1DD93A0040E8D5 /* Thumbnail.swift */; };
 		829A1B671C176FC60005DF33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A1B661C176FC60005DF33 /* AppDelegate.swift */; };
 		829A1B6E1C176FC60005DF33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829A1B6C1C176FC60005DF33 /* Main.storyboard */; };
 		829A1B701C176FC60005DF33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829A1B6F1C176FC60005DF33 /* Assets.xcassets */; };
@@ -19,12 +22,18 @@
 		829A1B8A1C18ADD50005DF33 /* ArticleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A1B891C18ADD50005DF33 /* ArticleListTableViewCell.swift */; };
 		829A1B8C1C18B8650005DF33 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A1B8B1C18B8650005DF33 /* HistoryTableViewCell.swift */; };
 		82A3BB381C18BC0200E3D879 /* wiki.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82A3BB361C18BC0200E3D879 /* wiki.xcdatamodeld */; };
+		82A3BB3A1C18C4CE00E3D879 /* RandomArticlesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A3BB391C18C4CE00E3D879 /* RandomArticlesDatasource.swift */; };
+		82A3BB3C1C18C57600E3D879 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A3BB3B1C18C57600E3D879 /* APIManager.swift */; };
+		82EA04351C1DD34F00121781 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA04341C1DD34F00121781 /* Article.swift */; };
 		B9203F3F6FE01F59C8428DB8 /* Pods_wiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17166C6F0CB7C5D0AF4ADFB2 /* Pods_wiki.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17166C6F0CB7C5D0AF4ADFB2 /* Pods_wiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F44589552136D57E770DD0F /* Pods-wiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wiki/Pods-wiki.debug.xcconfig"; sourceTree = "<group>"; };
+		823BE9321C1F52810045B63C /* Datasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
+		823D45911C1F61EB00385887 /* ArticlesDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesDatasource.swift; sourceTree = "<group>"; };
+		8290F7D71C1DD93A0040E8D5 /* Thumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		829A1B631C176FC60005DF33 /* wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829A1B661C176FC60005DF33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		829A1B6D1C176FC60005DF33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +48,9 @@
 		829A1B891C18ADD50005DF33 /* ArticleListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewCell.swift; sourceTree = "<group>"; };
 		829A1B8B1C18B8650005DF33 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		82A3BB371C18BC0200E3D879 /* wiki.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wiki.xcdatamodel; sourceTree = "<group>"; };
+		82A3BB391C18C4CE00E3D879 /* RandomArticlesDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomArticlesDatasource.swift; sourceTree = "<group>"; };
+		82A3BB3B1C18C57600E3D879 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		82EA04341C1DD34F00121781 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		D3451628F66ECD544FFC560C /* Pods-wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-wiki/Pods-wiki.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +75,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		823D45951C1F654900385887 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				823BE9321C1F52810045B63C /* Datasource.swift */,
+				823D45911C1F61EB00385887 /* ArticlesDatasource.swift */,
+				82A3BB391C18C4CE00E3D879 /* RandomArticlesDatasource.swift */,
+			);
+			name = Datasource;
+			sourceTree = "<group>";
+		};
+		823D45961C1F656700385887 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				82A3BB3B1C18C57600E3D879 /* APIManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		829A1B5A1C176FC50005DF33 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +115,9 @@
 		829A1B651C176FC60005DF33 /* wiki */ = {
 			isa = PBXGroup;
 			children = (
+				823D45961C1F656700385887 /* API */,
+				823D45951C1F654900385887 /* Datasource */,
+				82EA04331C1DD25E00121781 /* Entity */,
 				829A1B801C178C9A0005DF33 /* View Controllers */,
 				829A1B661C176FC60005DF33 /* AppDelegate.swift */,
 				829A1B6F1C176FC60005DF33 /* Assets.xcassets */,
@@ -132,6 +165,15 @@
 				829A1B8B1C18B8650005DF33 /* HistoryTableViewCell.swift */,
 			);
 			name = HistoryViewController;
+			sourceTree = "<group>";
+		};
+		82EA04331C1DD25E00121781 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				82EA04341C1DD34F00121781 /* Article.swift */,
+				8290F7D71C1DD93A0040E8D5 /* Thumbnail.swift */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 		922693153B1346C6FC2C937F /* Frameworks */ = {
@@ -265,11 +307,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82EA04351C1DD34F00121781 /* Article.swift in Sources */,
 				829A1B7B1C178C4D0005DF33 /* BookmarksViewController.swift in Sources */,
+				8290F7D81C1DD93A0040E8D5 /* Thumbnail.swift in Sources */,
 				829A1B671C176FC60005DF33 /* AppDelegate.swift in Sources */,
+				82A3BB3C1C18C57600E3D879 /* APIManager.swift in Sources */,
 				829A1B8C1C18B8650005DF33 /* HistoryTableViewCell.swift in Sources */,
 				829A1B8A1C18ADD50005DF33 /* ArticleListTableViewCell.swift in Sources */,
+				82A3BB3A1C18C4CE00E3D879 /* RandomArticlesDatasource.swift in Sources */,
 				829A1B871C18A4ED0005DF33 /* ArticleViewController.swift in Sources */,
+				823D45921C1F61EB00385887 /* ArticlesDatasource.swift in Sources */,
+				823BE9331C1F52810045B63C /* Datasource.swift in Sources */,
 				82A3BB381C18BC0200E3D879 /* wiki.xcdatamodeld in Sources */,
 				829A1B7F1C178C900005DF33 /* ArticleListViewController.swift in Sources */,
 				829A1B7D1C178C5E0005DF33 /* HistoryViewController.swift in Sources */,
@@ -386,10 +434,12 @@
 			baseConfigurationReference = 2F44589552136D57E770DD0F /* Pods-wiki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = wiki/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.powerfulbits.wiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -398,6 +448,7 @@
 			baseConfigurationReference = D3451628F66ECD544FFC560C /* Pods-wiki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = wiki/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.powerfulbits.wiki;
