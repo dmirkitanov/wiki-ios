@@ -64,7 +64,7 @@
         <scene sceneID="eZ6-u7-bm1">
             <objects>
                 <navigationController id="U5u-tO-Tsv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="8rQ-pX-pml"/>
+                    <tabBarItem key="tabBarItem" title="History" image="tabbar_icon_history" id="8rQ-pX-pml"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4PQ-MI-vA5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -220,7 +220,7 @@
         <scene sceneID="LrC-SL-KSM">
             <objects>
                 <navigationController id="YUi-Xv-cG1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Browse" id="uLG-SW-K5r"/>
+                    <tabBarItem key="tabBarItem" title="Browse" image="tabbar_icon_browse" id="uLG-SW-K5r"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fJh-GB-5MY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -256,5 +256,7 @@
     </scenes>
     <resources>
         <image name="navbar_icon_star_full" width="20" height="20"/>
+        <image name="tabbar_icon_browse" width="20" height="20"/>
+        <image name="tabbar_icon_history" width="21" height="20"/>
     </resources>
 </document>
