@@ -13,6 +13,7 @@ class Article: EKObjectModel  {
     var pageId: NSNumber!
     var title: String!
     var summary: String?
+    var categories: NSArray?
     var content: String?
     var revisions: NSArray? {
         didSet {
@@ -37,6 +38,7 @@ extension Article {
         let mapping = EKObjectMapping(objectClass: self)
         mapping.mapPropertiesFromDictionary(["pageid": "pageId", "title": "title", "extract": "summary", "revisions": "revisions"])
         mapping.hasOne(Thumbnail.self, forKeyPath: "thumbnail")
+        mapping.hasMany(Category.self, forKeyPath: "categories")
         return mapping
     }
 }

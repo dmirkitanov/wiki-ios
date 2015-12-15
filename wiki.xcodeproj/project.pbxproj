@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		823BE9331C1F52810045B63C /* SectionedDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823BE9321C1F52810045B63C /* SectionedDatasource.swift */; };
 		823D45921C1F61EB00385887 /* ArticlesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D45911C1F61EB00385887 /* ArticlesDatasource.swift */; };
+		825221201C20B6720045BE41 /* index.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 8252211F1C20B6720045BE41 /* index.mustache */; };
 		82608C4C1C1F85F80064D2D8 /* ArticleDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82608C4B1C1F85F80064D2D8 /* ArticleDatasource.swift */; };
 		82608C7C1C1F90980064D2D8 /* HistoryItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82608C781C1F90980064D2D8 /* HistoryItem+CoreDataProperties.swift */; };
 		82608C7D1C1F90980064D2D8 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82608C791C1F90980064D2D8 /* HistoryItem.swift */; };
@@ -29,6 +30,7 @@
 		82A3BB381C18BC0200E3D879 /* wiki.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82A3BB361C18BC0200E3D879 /* wiki.xcdatamodeld */; };
 		82A3BB3A1C18C4CE00E3D879 /* RandomArticlesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A3BB391C18C4CE00E3D879 /* RandomArticlesDatasource.swift */; };
 		82A3BB3C1C18C57600E3D879 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A3BB3B1C18C57600E3D879 /* APIManager.swift */; };
+		82C741431C20BB8E00DBE562 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C741421C20BB8E00DBE562 /* Category.swift */; };
 		82EA04351C1DD34F00121781 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA04341C1DD34F00121781 /* Article.swift */; };
 		B9203F3F6FE01F59C8428DB8 /* Pods_wiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17166C6F0CB7C5D0AF4ADFB2 /* Pods_wiki.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,7 @@
 		2F44589552136D57E770DD0F /* Pods-wiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wiki/Pods-wiki.debug.xcconfig"; sourceTree = "<group>"; };
 		823BE9321C1F52810045B63C /* SectionedDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionedDatasource.swift; sourceTree = "<group>"; };
 		823D45911C1F61EB00385887 /* ArticlesDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesDatasource.swift; sourceTree = "<group>"; };
+		8252211F1C20B6720045BE41 /* index.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.mustache; sourceTree = "<group>"; };
 		82608C4B1C1F85F80064D2D8 /* ArticleDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDatasource.swift; sourceTree = "<group>"; };
 		82608C781C1F90980064D2D8 /* HistoryItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HistoryItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		82608C791C1F90980064D2D8 /* HistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		82A3BB371C18BC0200E3D879 /* wiki.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wiki.xcdatamodel; sourceTree = "<group>"; };
 		82A3BB391C18C4CE00E3D879 /* RandomArticlesDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomArticlesDatasource.swift; sourceTree = "<group>"; };
 		82A3BB3B1C18C57600E3D879 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		82C741421C20BB8E00DBE562 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		82EA04341C1DD34F00121781 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		D3451628F66ECD544FFC560C /* Pods-wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-wiki/Pods-wiki.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +120,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		8252211E1C20B61C0045BE41 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				8252211F1C20B6720045BE41 /* index.mustache */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
 		829A1B5A1C176FC50005DF33 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 				829A1B6F1C176FC60005DF33 /* Assets.xcassets */,
 				829A1B711C176FC60005DF33 /* LaunchScreen.storyboard */,
 				829A1B741C176FC60005DF33 /* Info.plist */,
+				8252211E1C20B61C0045BE41 /* web */,
 			);
 			path = wiki;
 			sourceTree = "<group>";
@@ -195,6 +208,7 @@
 			children = (
 				82EA04341C1DD34F00121781 /* Article.swift */,
 				8290F7D71C1DD93A0040E8D5 /* Thumbnail.swift */,
+				82C741421C20BB8E00DBE562 /* Category.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -268,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825221201C20B6720045BE41 /* index.mustache in Resources */,
 				829A1B731C176FC60005DF33 /* LaunchScreen.storyboard in Resources */,
 				829A1B881C18A4ED0005DF33 /* ArticleViewController.xib in Resources */,
 				829A1B701C176FC60005DF33 /* Assets.xcassets in Resources */,
@@ -341,6 +356,7 @@
 				829A1B8A1C18ADD50005DF33 /* ArticleListTableViewCell.swift in Sources */,
 				82A3BB3A1C18C4CE00E3D879 /* RandomArticlesDatasource.swift in Sources */,
 				82608C7E1C1F90980064D2D8 /* Bookmark+CoreDataProperties.swift in Sources */,
+				82C741431C20BB8E00DBE562 /* Category.swift in Sources */,
 				829A1B871C18A4ED0005DF33 /* ArticleViewController.swift in Sources */,
 				823D45921C1F61EB00385887 /* ArticlesDatasource.swift in Sources */,
 				82608C7C1C1F90980064D2D8 /* HistoryItem+CoreDataProperties.swift in Sources */,

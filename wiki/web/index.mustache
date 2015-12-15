@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <style>
+            .mw-editsection, .mw-editsection-bracket {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{{title}}</h1>
+        
+        <h3>Categories</h3>
+        <ul>
+        {{#categories}}
+        <li>{{title}}</li>
+        {{/categories}}
+        </ul>
+
+        {{{content}}}
+    </body>
+</html>

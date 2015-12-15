@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import MagicalRecord
 import SVProgressHUD
+import Mustache
 
 class ArticleViewController: UIViewController, ArticleDatasourceDelegate {
 
@@ -80,6 +81,26 @@ class ArticleViewController: UIViewController, ArticleDatasourceDelegate {
 
     func datasourceDidFinishLoading(datasource: ArticleDatasource, error: NSError?) {
         self.title = (datasource.article?.title)!
-        webView.loadHTMLString((datasource.article?.content)!, baseURL: NSURL(string: baseURLString))
+        webView.loadHTMLString(renderHTMLArticle(), baseURL: NSURL(string: baseURLString))
+    }
+
+    func renderHTMLArticle() -> String {
+        if let article = datasource.article {
+            do {
+                let template = try Template(named: "index")
+                let categories = (article.categories != nil ? article.categories!.map({["title": $0.title]}) : [])
+                let data = [
+                    "title": Box(article.title),
+                    "content": Box(article.content),
+                    "categories": Box(categories)
+                ]
+                
+                let rendering = try template.render(Box(data))
+                return rendering
+            } catch {
+            }
+        }
+        
+        return ""
     }
 }
