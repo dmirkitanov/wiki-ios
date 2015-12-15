@@ -108,7 +108,6 @@ class APIManager: NSObject {
             "action": "query",
             "prop": "categories|revisions",
             "format": "json",
-            "exchars": 512,
             "clshow": "!hidden",
             "rvprop": "content",
             "rvparse": "",
