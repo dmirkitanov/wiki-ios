@@ -102,5 +102,44 @@ class APIManager: NSObject {
             }
         )
     }
+    
+    func getArticleContent(pageId: Int, success successBlock: ((article: Article) -> Void)?, failure failureBlock: ((error: NSError) -> Void)?) {
+        let params = [
+            "action": "query",
+            "prop": "categories|revisions",
+            "format": "json",
+            "exchars": 512,
+            "clshow": "!hidden",
+            "rvprop": "content",
+            "rvparse": "",
+            "pageids": pageId
+        ]
+        
+        let manager = AFHTTPSessionManager()
+        manager.GET(apiURLString, parameters: params, progress: nil, success: { (task: NSURLSessionTask, responseObject: AnyObject?) -> Void in
+            
+            if let jsonResult = responseObject as? Dictionary<String, AnyObject> {
+                if let query = jsonResult["query"] as? Dictionary<String, AnyObject> {
+                    if let pages = query["pages"] as? Dictionary<String, AnyObject> {
+                        for (_, pageData) in pages {
+                            let article = Article(properties: pageData as! Dictionary<NSObject, AnyObject>)
+                            
+                            print(article)
+                            
+                            successBlock?(article: article)
+                            return
+                        }
+                    }
+                }
+                
+                let error = NSError(domain: AppDelegate.errorDomain, code: AppDelegate.errorCodeGeneric, userInfo: [NSLocalizedDescriptionKey: "Request failed"])
+                failureBlock?(error: error)
+            }
+            }, failure: { (task: NSURLSessionTask?, error: NSError) -> Void in
+                print("Error: " + error.localizedDescription)
+                failureBlock?(error: error)
+            }
+        )
+    }
 }
 

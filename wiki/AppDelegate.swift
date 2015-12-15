@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MagicalRecord
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static let errorCodeGeneric = 1000
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        MagicalRecord.setupCoreDataStackWithStoreNamed("wiki")
+        
         return true
     }
 

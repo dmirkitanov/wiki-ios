@@ -60,11 +60,11 @@
             </objects>
             <point key="canvasLocation" x="2502" y="1060"/>
         </scene>
-        <!--Item-->
+        <!--History-->
         <scene sceneID="eZ6-u7-bm1">
             <objects>
                 <navigationController id="U5u-tO-Tsv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8rQ-pX-pml"/>
+                    <tabBarItem key="tabBarItem" title="History" id="8rQ-pX-pml"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4PQ-MI-vA5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -106,11 +106,11 @@
             </objects>
             <point key="canvasLocation" x="2502" y="92"/>
         </scene>
-        <!--Item-->
+        <!--Bookmarks-->
         <scene sceneID="hIB-dq-hBR">
             <objects>
                 <navigationController id="B4Z-Ff-qc8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1pi-nc-8vN"/>
+                    <tabBarItem key="tabBarItem" title="Bookmarks" image="navbar_icon_star_full" id="1pi-nc-8vN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BhY-LA-JWZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -216,11 +216,11 @@
             </objects>
             <point key="canvasLocation" x="2502" y="-835"/>
         </scene>
-        <!--Item-->
+        <!--Browse-->
         <scene sceneID="LrC-SL-KSM">
             <objects>
                 <navigationController id="YUi-Xv-cG1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uLG-SW-K5r"/>
+                    <tabBarItem key="tabBarItem" title="Browse" id="uLG-SW-K5r"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fJh-GB-5MY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -254,4 +254,7 @@
             <point key="canvasLocation" x="536" y="-104"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="navbar_icon_star_full" width="20" height="20"/>
+    </resources>
 </document>

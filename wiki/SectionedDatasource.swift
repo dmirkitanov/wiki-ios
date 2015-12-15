@@ -1,5 +1,5 @@
 //
-//  Datasource.swift
+//  SectionedDatasource.swift
 //  wiki
 //
 //  Created by dm on 15/12/15.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-protocol DatasourceDelegate: class {
-    func datasourceDidFinishLoading(datasource: Datasource, error: NSError?)
-    func datasourceDidUpdateObject(datasource: Datasource, atIndexPath indexPath: NSIndexPath)
+protocol SectionedDatasourceDelegate: class {
+    func datasourceDidFinishLoading(datasource: SectionedDatasource, error: NSError?)
+    func datasourceDidUpdateObject(datasource: SectionedDatasource, atIndexPath indexPath: NSIndexPath)
 }
 
-class Datasource: NSObject {
+class SectionedDatasource: NSObject {
     var isLoading = false
 
-    weak var delegate: DatasourceDelegate?
+    weak var delegate: SectionedDatasourceDelegate?
 
-    convenience init(delegate: DatasourceDelegate) {
+    convenience init(delegate: SectionedDatasourceDelegate) {
         self.init()
         self.delegate = delegate
     }
@@ -27,10 +27,6 @@ class Datasource: NSObject {
         fatalError("This method must be overridden")
     }
     
-    func reloadData() {
-        fatalError("This method must be overridden")
-    }
-
     func loadMoreData() {
         fatalError("This method must be overridden")
     }

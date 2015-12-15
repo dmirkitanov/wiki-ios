@@ -9,21 +9,15 @@
 import UIKit
 import SDWebImage
 
-class ArticleListViewController: UITableViewController, DatasourceDelegate {
+class ArticleListViewController: UITableViewController, SectionedDatasourceDelegate {
     
-    var datasource: Datasource?
+    var datasource: SectionedDatasource?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         datasource = RandomArticlesDatasource(delegate: self)
         datasource!.loadData()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,6 +59,9 @@ class ArticleListViewController: UITableViewController, DatasourceDelegate {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let articleViewController = ArticleViewController()
+        if let article = datasource?.objectAtIndexPath(indexPath) as! Article? {
+            articleViewController.setArticle(article)
+        }
         self.navigationController!.pushViewController(articleViewController, animated: true)
     }
 
@@ -74,7 +71,9 @@ class ArticleListViewController: UITableViewController, DatasourceDelegate {
         }
     }
     
-    func datasourceDidFinishLoading(datasource: Datasource, error: NSError?) {
+    // MARK: - Datasource delegate
+
+    func datasourceDidFinishLoading(datasource: SectionedDatasource, error: NSError?) {
         if datasource != self.datasource {      // TODO: ?????
             return
         }
@@ -82,7 +81,7 @@ class ArticleListViewController: UITableViewController, DatasourceDelegate {
         tableView.reloadData()
     }
     
-    func datasourceDidUpdateObject(datasource: Datasource, atIndexPath indexPath: NSIndexPath) {
+    func datasourceDidUpdateObject(datasource: SectionedDatasource, atIndexPath indexPath: NSIndexPath) {
         if let visibleRows = tableView.indexPathsForVisibleRows {
             if visibleRows.contains(indexPath) {
                 tableView.beginUpdates()
@@ -91,7 +90,9 @@ class ArticleListViewController: UITableViewController, DatasourceDelegate {
             }
         }
     }
-    
+
+    // MARK: - actions
+
     @IBAction func refresh() {
         tableView.reloadData()
     }

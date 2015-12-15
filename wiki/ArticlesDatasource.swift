@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ArticlesDatasource: Datasource {
+class ArticlesDatasource: SectionedDatasource {
     var articles: [Article] = []
     
     override init() {
