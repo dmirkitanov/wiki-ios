@@ -8,6 +8,7 @@ pod 'SDWebImage'
 pod 'SVProgressHUD'
 pod 'EasyMapping'
 pod 'MagicalRecord'
+pod 'GRMustache.swift'
 
 end
 
