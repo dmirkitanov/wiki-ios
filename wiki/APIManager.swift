@@ -27,7 +27,6 @@ class APIManager: NSObject {
         let manager = AFHTTPSessionManager()
         manager.GET(apiURLString, parameters: params, progress: nil, success: { (task: NSURLSessionTask, responseObject: AnyObject?) -> Void in
             
-            print("JSON: " + (responseObject?.description)!)
             var articles: [Article] = []
             if let jsonResult = responseObject as? Dictionary<String, AnyObject> {
                 if let query = jsonResult["query"] as? Dictionary<String, AnyObject> {
@@ -35,8 +34,6 @@ class APIManager: NSObject {
                         for (_, pageData) in pages {
                             articles.append(Article(properties: pageData as! Dictionary<NSObject, AnyObject>))
                         }
-                        
-                        print(articles)
                         
                         var newContinueMarker: String?
                         if let jsonContinue = jsonResult["continue"] as? Dictionary<String, AnyObject> {
@@ -85,8 +82,6 @@ class APIManager: NSObject {
                         for (_, pageData) in pages {
                             let article = Article(properties: pageData as! Dictionary<NSObject, AnyObject>)
                             
-                            print(article)
-                            
                             successBlock?(article: article)
                             return
                         }
@@ -122,8 +117,6 @@ class APIManager: NSObject {
                     if let pages = query["pages"] as? Dictionary<String, AnyObject> {
                         for (_, pageData) in pages {
                             let article = Article(properties: pageData as! Dictionary<NSObject, AnyObject>)
-                            
-                            print(article)
                             
                             successBlock?(article: article)
                             return

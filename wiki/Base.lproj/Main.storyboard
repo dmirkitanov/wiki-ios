@@ -131,17 +131,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="fNp-7A-nlZ">
-                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="rdp-Lm-RDw" id="7LP-VN-pOb"/>
-                            </connections>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="90" id="e7f-J1-p0S" customClass="ArticleListTableViewCell" customModule="wiki" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="136" width="600" height="90"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e7f-J1-p0S" id="JnC-gJ-ODN">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
@@ -199,20 +191,8 @@
                             <action selector="refresh" destination="rdp-Lm-RDw" eventType="valueChanged" id="tjJ-jV-xHx"/>
                         </connections>
                     </refreshControl>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="9N2-Jz-c3K" id="IDe-pA-YXW"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lla-Im-FPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="9N2-Jz-c3K">
-                    <connections>
-                        <outlet property="delegate" destination="rdp-Lm-RDw" id="z3P-z5-uZi"/>
-                        <outlet property="searchBar" destination="fNp-7A-nlZ" id="48b-U3-hs6"/>
-                        <outlet property="searchContentsController" destination="rdp-Lm-RDw" id="Wq6-9k-ITe"/>
-                        <outlet property="searchResultsDataSource" destination="rdp-Lm-RDw" id="IgF-GH-Rx9"/>
-                        <outlet property="searchResultsDelegate" destination="rdp-Lm-RDw" id="VZk-e6-XZU"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2502" y="-835"/>
         </scene>

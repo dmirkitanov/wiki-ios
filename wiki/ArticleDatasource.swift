@@ -46,6 +46,4 @@ class ArticleDatasource: NSObject {
                 self.delegate?.datasourceDidFinishLoading(self, error: error)
         })
     }
-
-
 }

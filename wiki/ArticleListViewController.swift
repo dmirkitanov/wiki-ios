@@ -80,9 +80,10 @@ class ArticleListViewController: UITableViewController, SectionedDatasourceDeleg
     // MARK: - Datasource delegate
 
     func datasourceDidFinishLoading(datasource: SectionedDatasource, error: NSError?) {
-        if datasource != self.datasource {      // TODO: ?????
-            return
-        }
+        // TODO: implement this when search datasource will be available
+//        if datasource != self.datasource {
+//            return
+//        }
         
         tableView.reloadData()
     }

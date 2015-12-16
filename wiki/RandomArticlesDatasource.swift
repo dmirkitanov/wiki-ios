@@ -56,24 +56,3 @@ class RandomArticlesDatasource: ArticlesDatasource {
         })
     }
 }
-
-
-//var searchText: String?
-//func loadArticlesWithSearchText(searchText:String?) {
-//    if isLoading {
-//        return
-//    }
-//    
-//    self.isLoading = true
-//    
-//    APIManager.sharedInstance.getRandomArticles(success: { (articles, continueMarker) -> Void in
-//        self.searchText = searchText
-//        self.articles = articles
-//        self.isLoading = false
-//        
-//        self.delegate?.datasourceDidFinishLoading(self, error: nil)
-//        }, failure: { (error) -> Void in
-//            self.isLoading = false
-//            
-//    })
-//}
