@@ -42,6 +42,12 @@
                                         <constraint firstItem="tEa-lq-vC4" firstAttribute="centerY" secondItem="KqI-ch-Ymt" secondAttribute="centerY" id="T0F-fO-BMz"/>
                                         <constraint firstItem="tEa-lq-vC4" firstAttribute="leading" secondItem="xn4-xy-2ZH" secondAttribute="trailing" constant="15" id="Y34-Nc-0Qr"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="tEa-lq-vC4"/>
+                                            <exclude reference="xn4-xy-2ZH"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="itemTypeImageView" destination="xn4-xy-2ZH" id="eYA-Gb-Ri5"/>
