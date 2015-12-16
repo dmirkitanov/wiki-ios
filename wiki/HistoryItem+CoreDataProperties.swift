@@ -1,9 +1,9 @@
 //
 //  HistoryItem+CoreDataProperties.swift
-//  wiki
+//  
 //
-//  Created by dm on 15/12/15.
-//  Copyright © 2015 Dmitry Mirkitanov. All rights reserved.
+//  Created by dm on 16/12/15.
+//
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.
@@ -14,7 +14,7 @@ import CoreData
 
 extension HistoryItem {
 
-    @NSManaged var itemType: NSNumber?
-    @NSManaged var title: String?
+    @NSManaged var title: String!
+    @NSManaged var articlePageId: NSNumber!
 
 }

@@ -61,6 +61,12 @@ class ArticleListViewController: UITableViewController, SectionedDatasourceDeleg
         let articleViewController = ArticleViewController()
         if let article = datasource?.objectAtIndexPath(indexPath) as! Article? {
             articleViewController.setArticle(article)
+
+            let historyItem = HistoryItem.MR_createEntity()
+            historyItem.articlePageId = article.pageId
+            historyItem.title = article.title
+            historyItem.managedObjectContext!.MR_saveToPersistentStoreAndWait()
+
         }
         self.navigationController!.pushViewController(articleViewController, animated: true)
     }
