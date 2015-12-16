@@ -84,7 +84,12 @@ class ArticleListViewController: UITableViewController, SectionedDatasourceDeleg
 //        if datasource != self.datasource {
 //            return
 //        }
-        
+        if let refreshControl = self.refreshControl {
+            if refreshControl.refreshing {
+                refreshControl.endRefreshing()
+            }
+        }
+
         tableView.reloadData()
     }
     
@@ -101,6 +106,6 @@ class ArticleListViewController: UITableViewController, SectionedDatasourceDeleg
     // MARK: - actions
 
     @IBAction func refresh() {
-        tableView.reloadData()
+        datasource!.loadData()
     }
 }
